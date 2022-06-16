@@ -29,8 +29,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "c:/Users/1kryo/Code/Personal/MCA",
-      "program": "c:/Users/1kryo/Code/Personal/MCA/build/Debug/outDebug",
+      "cwd": "c:/Users/1kryo/Documents/MCA_Sem1/MCA",
+      "program": "c:/Users/1kryo/Documents/MCA_Sem1/MCA/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
       "setupCommands": [
