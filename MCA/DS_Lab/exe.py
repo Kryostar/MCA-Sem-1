@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-dir_name = "C:/Users/1kryo/Code/Personal/MCA/DS_Lab"
+dir_name = "C:/Users/1kryo/Documents/MCA_Sem1/MCA/DS_lab/"
 test = os.listdir(dir_name)
 
 for item in test:
