@@ -1,8 +1,11 @@
-
-
 import java.util.Scanner;
 
 public class marks {
+	/**
+	 * Grades the Student depending on the total marks obtained by the student
+	 * 
+	 * @param total The total marks obtained by the student.
+	 */
 	static void grade(int total) {
 		if (total >= 90)
 			System.out.println("Grade: S");
@@ -20,6 +23,9 @@ public class marks {
 			System.out.println("Grade: A");
 	}
 
+	/**
+	 * It takes in the total marks of a student and prints out the grade
+	 */
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		System.out.print("\033[H\033[2J");
@@ -37,6 +43,7 @@ public class marks {
 			System.out.println("Student Marks\n1.Enter Details\n2.Display");
 			char c = s.next().charAt(0);
 			switch (c) {
+				// Taking in the details of the student.
 				case 1:
 					if (i < x) {
 						System.out.print("Name: ");
@@ -51,6 +58,7 @@ public class marks {
 						break;
 					}
 
+				// Taking in the roll number of the student and then printing out the details of the student.
 				case 2:
 					System.out.print("Roll Number: ");
 					s.close();

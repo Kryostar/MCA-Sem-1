@@ -1,3 +1,6 @@
+/**
+ * This class takes the principle, rate and time as input and calculates the simple interest
+ */
 import java.util.Scanner;
 
 public class simpleInt {

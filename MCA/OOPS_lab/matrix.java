@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * It takes 9 elements from the user and displays them in a 3x3 matrix form
+ */
 public class matrix {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);

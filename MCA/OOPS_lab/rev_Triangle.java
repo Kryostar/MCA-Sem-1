@@ -1,3 +1,6 @@
+/**
+ * This class prints a triangle of stars in reverse order
+ */
 public class rev_Triangle {
 	public static void main(String args[]) {
 		for (int i = 10; i > 0; i--) {

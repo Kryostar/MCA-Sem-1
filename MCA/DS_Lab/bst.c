@@ -8,6 +8,13 @@ struct TreeNode
 	struct TreeNode* right;
 };
 
+/**
+ * It deletes the tree.
+ * 
+ * @param root The root of the tree.
+ * 
+ * @return The root of the tree.
+ */
 struct TreeNode* makeEmpty(struct TreeNode* root)
 {
 	if (root != NULL)
@@ -19,6 +26,16 @@ struct TreeNode* makeEmpty(struct TreeNode* root)
 	return NULL;
 }
 
+/**
+ * If the root is NULL, create a new node and return it. Otherwise, if the value is less than the root,
+ * insert it into the left subtree. Otherwise, if the value is greater than the root, insert it into
+ * the right subtree
+ * 
+ * @param root The root of the tree.
+ * @param x the value to be inserted
+ * 
+ * @return The root of the tree.
+ */
 struct TreeNode* insert(struct TreeNode* root, int x)
 {
 	if (root == NULL)
@@ -34,6 +51,14 @@ struct TreeNode* insert(struct TreeNode* root, int x)
 	return root;
 }
 
+/**
+ * If the root is NULL, return NULL. If the root's left child is NULL, return the root. Otherwise,
+ * return the minimum value in the root's left subtree
+ * 
+ * @param root The root of the tree.
+ * 
+ * @return The minimum value in the tree.
+ */
 struct TreeNode* findMin(struct TreeNode* root)
 {
 	if (root == NULL)
@@ -44,6 +69,13 @@ struct TreeNode* findMin(struct TreeNode* root)
 		return findMin(root->left);
 }
 
+/**
+ * It finds the maximum value in the tree.
+ * 
+ * @param root The root of the tree
+ * 
+ * @return The maximum value in the tree.
+ */
 struct TreeNode* findMax(struct TreeNode* root)
 {
 	if (root == NULL)
@@ -54,6 +86,16 @@ struct TreeNode* findMax(struct TreeNode* root)
 		return findMax(root->right);
 }
 
+/**
+ * If the root is NULL, return NULL; if x is less than the root, return the result of searching the
+ * left subtree; if x is greater than the root, return the result of searching the right subtree;
+ * otherwise, return the root
+ * 
+ * @param root The root of the tree
+ * @param x The value to be searched in the tree.
+ * 
+ * @return The node that contains the value x.
+ */
 struct TreeNode* find(struct TreeNode* root, int x)
 {
 	if (root == NULL)
@@ -66,6 +108,14 @@ struct TreeNode* find(struct TreeNode* root, int x)
 		return root;
 }
 
+/**
+ * If the root is NULL, return -1. Otherwise, return the maximum of the heights of the left and right
+ * subtrees, plus 1
+ * 
+ * @param root The root of the tree
+ * 
+ * @return The height of the tree.
+ */
 int findHeight(struct TreeNode* root)
 {
 	int lefth, righth;
@@ -76,6 +126,15 @@ int findHeight(struct TreeNode* root)
 	return (lefth > righth ? lefth : righth) + 1;
 }
 
+/**
+ * If the node to be deleted has two children, replace it with its inorder successor; otherwise, delete
+ * it
+ * 
+ * @param root The root of the tree
+ * @param x The value to be deleted from the tree.
+ * 
+ * @return The root of the tree.
+ */
 struct TreeNode* delete(struct TreeNode* root, int x)
 {
 	struct TreeNode* temp;
@@ -103,6 +162,14 @@ struct TreeNode* delete(struct TreeNode* root, int x)
 	return root;
 }
 
+/**
+ * Inorder traversal of a binary tree is to traverse the left subtree first, then root and right
+ * subtree
+ * 
+ * @param root The root of the tree
+ * 
+ * @return the root of the tree.
+ */
 void inorder(struct TreeNode* root)
 {
 	if (root == NULL)

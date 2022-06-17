@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * It's a class that takes a string and performs various operations on it
+ */
 public class q14 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

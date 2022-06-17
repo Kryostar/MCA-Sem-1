@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * This class takes in the principle, rate and time and calculates the compound interest
+ */
 class compoundInt {
 	public static void main(String args[]) {
 		System.out.print("\033[H\033[2J");

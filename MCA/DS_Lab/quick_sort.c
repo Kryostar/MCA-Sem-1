@@ -1,5 +1,12 @@
 #include<stdio.h>
 #include<conio.h>
+
+/**
+ * Swap the values of two integers.
+ * 
+ * @param a The array to be sorted
+ * @param b the array of numbers
+ */
 void swap(int* a, int* b) {
 	int t = *a;
 	*a = *b;
@@ -48,13 +55,26 @@ void quickSort(int array[], int low, int high) {
 	}
 }
 
-// Print the Array
+/** Print the Array
+ */
 void printArray(int array[], int size) {
 	for (int i = 0;i < size;i++)
 		printf("%d", array[i]);
 	printf("\n");
 }
 
+/**
+ * The function takes an array, the starting index and the ending index as parameters. 
+ * 
+ * It then takes the last element as the pivot and places it at its correct position in the array. 
+ * 
+ * All the elements smaller than the pivot are placed to the left of the pivot and all the elements
+ * greater than the pivot are placed to the right of the pivot. 
+ * 
+ * The function then recursively calls itself to sort the left and right halves of the array
+ * 
+ * @return The sorted array in ascending order.
+ */
 int main() {
 	int size;
 	system("cls");

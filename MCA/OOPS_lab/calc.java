@@ -2,6 +2,10 @@
 
 import java.util.Scanner;
 
+/**
+ * It's a calculator that takes in two numbers and an operator and then performs the operation on the
+ * two numbers
+ */
 public class calc {
 	public static void main(String[] args) {
 		Scanner S = new Scanner(System.in);

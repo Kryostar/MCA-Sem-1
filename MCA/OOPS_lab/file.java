@@ -6,6 +6,10 @@ import java.io.FileWriter;
 import java.util.Scanner;
 
 class file {
+	/**
+	 * It's a menu driven program that allows the user to create, read, write and
+	 * delete files
+	 */
 	public static void main(String[] args) {
 		System.out.print("Menu:\n1.Create File\n2.Read File\n3.Write to File\n4.Delete Files\n0.Exit\nEnter Choice: ");
 		Scanner sc = new Scanner(System.in);
@@ -33,6 +37,9 @@ class file {
 		} while (Choice != 0);
 	}
 
+	/**
+	 * The below function creates a new file based on the name provided by the user
+	 */
 	void create() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter name of file: ");
@@ -52,6 +59,9 @@ class file {
 		sc.close();
 	}
 
+	/**
+	 * It reads the file and prints the data in the file
+	 */
 	void read() {
 		char[] array = new char[100];
 
@@ -74,6 +84,10 @@ class file {
 		}
 	}
 
+	/**
+	 * This function takes a string as input and writes it to a file called
+	 * output.txt
+	 */
 	void write() {
 
 		try {
@@ -96,6 +110,9 @@ class file {
 
 	}
 
+	/**
+	 * The below function deletes a file from the current directory
+	 */
 	void deletef() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the name of the file to be Deleted! : ");

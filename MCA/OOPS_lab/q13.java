@@ -1,6 +1,10 @@
 // 13. Write a JAVA Program to implement an array of objects of a class.
 import java.util.Scanner;
 
+/**
+ * The above class is used to create an array of Student objects and display the details of each
+ * student
+ */
 class q13 {
 
 	public static void main(String args[]) {
@@ -28,8 +32,10 @@ class q13 {
 	}
 }
 
-// Creating a student class with
-// id and name as a attributes
+/**
+ * The Student class has two data members id and name. It has a constructor to initialize these data
+ * members and a display() method to display the data.
+ */
 class Student {
 
 	public int id;

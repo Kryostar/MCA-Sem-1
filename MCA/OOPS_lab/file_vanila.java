@@ -6,6 +6,10 @@ import java.io.FilenameFilter;
 import java.util.Scanner;
 
 public class file_vanila {
+	/**
+	 * The createNewFile() method is used to create a file in Java, and return a boolean value : true if
+	 * the file is created successful; false if the file is already exists
+	 */
 	void create() {
 		File file = new File("newFile.txt");
 		try {
@@ -22,6 +26,9 @@ public class file_vanila {
 		}
 	}
 
+	/**
+	 * The read() method reads the contents of the file and stores it in the array
+	 */
 	void read() {
 		char[] array = new char[100];
 		try {
@@ -40,6 +47,10 @@ public class file_vanila {
 		}
 	}
 
+	/**
+	 * The function creates a new file called newFile.txt and writes the string "This is the data in the
+	 * output file" to it
+	 */
 	void write() {
 		String data = "This is the data in the output file";
 		try {
@@ -57,6 +68,9 @@ public class file_vanila {
 		}
 	}
 
+	/**
+	 * The delete() method deletes the file or directory denoted by the abstract pathname
+	 */
 	void delete() {
 		// creates a file object
 		File file = new File("newFile.txt");
@@ -70,6 +84,10 @@ public class file_vanila {
 		}
 	}
 
+	/**
+	 * It takes a directory as input, filters out all the .java files in it, and writes the names of the
+	 * files to a new file
+	 */
 	void dir() {
 		try {
 			File f = new File("C:/Users/1kryo/Code/Personal/MCA/OOPS_lab");
@@ -102,10 +120,16 @@ public class file_vanila {
 		}
 	}
 
+	/**
+	 * clrscr() replacement
+	 */
 	void clr() {
 		System.out.print("\033[H\033[2J");
 	}
 
+	/**
+	 * A menu driven program that allows the user to create, read, write, delete and list files.
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		file_vanila fv = new file_vanila();

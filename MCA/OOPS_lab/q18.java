@@ -1,5 +1,8 @@
 import java.io.*;
 
+/**
+ * It copies the contents of a file to another file
+ */
 public class q18 {
 	private static final int BUFFER_SIZE = 4096;
 

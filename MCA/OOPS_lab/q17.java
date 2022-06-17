@@ -1,3 +1,6 @@
+/**
+ * A class that extends Thread and overrides the run() method is a thread
+ */
 public class q17 {
 	public static void main(String[] args) {
 		A a = new A();

@@ -1,6 +1,9 @@
 
 import java.util.Scanner;
 
+/**
+ * This class calculates the area of a square, triangle, circle and rectangle.
+ */
 class area {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);

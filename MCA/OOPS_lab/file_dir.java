@@ -1,5 +1,9 @@
 import java.io.File;
 
+/**
+ * It creates a new File instance by converting the given pathname string into an abstract pathname,
+ * and then populates the array with names of files and directories
+ */
 public class file_dir {
 
 	public static void main(String[] args) {
