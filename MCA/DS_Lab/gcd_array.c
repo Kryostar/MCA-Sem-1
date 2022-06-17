@@ -1,3 +1,6 @@
+/**
+ * The function gcd(a,b) returns the greatest common divisor of a and b
+ */
 #include<stdio.h>
 void main()
 {

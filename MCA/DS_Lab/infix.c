@@ -6,16 +6,29 @@
 char stack[SIZE];
 int top = -1;
 
+/* Pushing the element into the stack. */
 push(char ele)
 {
 	stack[++top] = ele;
 }
 
+/**
+ * It returns the top element of the stack and then decrements the top.
+ * 
+ * @return The top element of the stack.
+ */
 char pop()
 {
 	return(stack[top--]);
 }
 
+/**
+ * It returns the precedence of the operator passed to it
+ * 
+ * @param symbol The symbol to check the precedence of.
+ * 
+ * @return The precedence of the operator.
+ */
 int precedence(char symbol)
 {
 	if (symbol == '^')
@@ -36,6 +49,9 @@ int precedence(char symbol)
 	}
 }
 
+/**
+ * The function takes an infix expression as input and converts it into a postfix expression
+ */
 void main()
 {
 	char infix[50], postfix[50], ch, ele;

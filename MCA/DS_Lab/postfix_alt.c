@@ -1,3 +1,10 @@
+/**
+ * The function takes a postfix expression as input and evaluates it
+ * 
+ * @param item the item to be pushed onto the stack
+ * 
+ * @return The result of the expression evaluation.
+ */
 
 #include <stdio.h>
 #include <ctype.h>

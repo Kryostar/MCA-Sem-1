@@ -1,3 +1,6 @@
+/**
+ * The function takes two polynomials as input and returns the sum of the two polynomials
+ */
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -11,7 +14,6 @@ struct node* insertpoly(struct node* thead, int c, int e);
 struct node* append(struct node* thead, int c, int e);
 struct node* polyaddition(struct node* p1thead, struct node* p2thead);
 void display(struct node* thead);
-
 void main()
 {
 	int a, b, n, i;

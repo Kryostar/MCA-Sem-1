@@ -1,10 +1,25 @@
 #include <stdio.h>
+/**
+ * A node is a structure that contains an integer, a pointer to a node, and a pointer to a node.
+ * @property {int} data - The data stored in the node.
+ * @property leftChild - A pointer to the left child of the node.
+ * @property rightChild - The right child of the node.
+ */
 struct node {
 	int data;
 	struct node* leftChild;
 	struct node* rightChild;
 };
 
+/**
+ * If the tree is empty, then the root is the new node. Otherwise, if the new node is less than the
+ * current node, then it goes to the left. Otherwise, it goes to the right. If it can't go any further,
+ * then it inserts the new node as a leaf
+ * 
+ * @param data the data to be inserted into the tree
+ * 
+ * @return the root of the tree.
+ */
 struct node* root = NULL;
 void insert(int data) {
 	struct node* tempNode = (struct node*)malloc(sizeof(struct node));
@@ -66,6 +81,12 @@ void insert(int data) {
 }
 */
 
+/**
+ * If the root is not NULL, print the root's data, then recursively call the function on the root's
+ * left child, then recursively call the function on the root's right child
+ * 
+ * @param root The root of the tree.
+ */
 void pre_order_traversal(struct node* root) {
 	if (root != NULL) {
 		printf("%d ", root->data);
@@ -74,6 +95,12 @@ void pre_order_traversal(struct node* root) {
 	}
 }
 
+/**
+ * If the root is not null, then traverse the left subtree, print the root, and traverse the right
+ * subtree
+ * 
+ * @param root The root of the tree.
+ */
 void inorder_traversal(struct node* root) {
 	if (root != NULL) {
 		inorder_traversal(root->leftChild);
@@ -82,6 +109,12 @@ void inorder_traversal(struct node* root) {
 	}
 }
 
+/**
+ * If the root is not null, then traverse the left subtree, then traverse the right subtree, then print
+ * the root
+ * 
+ * @param root The root of the tree.
+ */
 void post_order_traversal(struct node* root) {
 	if (root != NULL) {
 		post_order_traversal(root->leftChild);
@@ -90,6 +123,10 @@ void post_order_traversal(struct node* root) {
 	}
 }
 
+/**
+ * The function takes a pointer to a node as an argument and returns the height of the tree rooted at
+ * that node
+ */
 void main() {
 	int ch, n, i;
 	system("cls");

@@ -12,6 +12,13 @@ struct queue
 };
 
 // Utility function to initialize a queue
+/**
+ * It creates a new queue with a given size.
+ * 
+ * @param size The size of the queue.
+ * 
+ * @return A pointer to a queue.
+ */
 struct queue* newQueue(int size)
 {
 	struct queue* pt = NULL;

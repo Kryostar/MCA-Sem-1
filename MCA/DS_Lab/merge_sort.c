@@ -5,6 +5,13 @@
 int a[11];
 int b[10];
 
+/**
+ * It takes the two sorted sub-arrays and merges them into one sorted array
+ * 
+ * @param low the lowest index of the array
+ * @param mid the middle index of the array
+ * @param high the highest index of the array
+ */
 void merging(int low, int mid, int high) {
 	int low1, low2, i;
 
@@ -25,6 +32,15 @@ void merging(int low, int mid, int high) {
 		a[i] = b[i];
 }
 
+/**
+ * If the array is not empty, sort the left half of the array, sort the right half of the array, and
+ * merge the two halves
+ * 
+ * @param low the lowest index of the array
+ * @param high the highest index of the array
+ * 
+ * @return the sorted array.
+ */
 void sort(int low, int high) {
 	int mid;
 
@@ -39,6 +55,10 @@ void sort(int low, int high) {
 	}
 }
 
+/**
+ * The function takes the first and last index of the array and sorts the array by dividing it into two
+ * parts and sorting them recursively
+ */
 void main() {
 	system("cls");
 	printf("Enter 10 elements:\n");

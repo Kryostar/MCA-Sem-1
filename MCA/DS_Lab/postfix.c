@@ -1,3 +1,8 @@
+/**
+ * The function takes a string as input and returns the result of the expression
+ * 
+ * @param x The value to be pushed onto the stack.
+ */
 #include<stdio.h>
 int stack[20];
 int top = -1;
